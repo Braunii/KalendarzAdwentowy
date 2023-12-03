@@ -1,0 +1,221 @@
+body{
+    margin: 0;
+    background-image: url(img/background.png);
+    background-size: 100% 100%;
+}
+#calendar{
+    width: 70vw;
+    height: 80vh;
+    background-color: green;
+    background-repeat: no-repeat;
+    background-image: url(img/containerbg.png);
+    background-size: 100% 100%;
+    border-radius: 3%;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#header{
+    width: 40vw;
+    height: 10vh;
+    background-image: url(img/labelbg.png);
+    background-size: 100% 100%;
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-top-right-radius: 30%;
+    border-top-left-radius: 30%;
+    flex-wrap: nowrap;
+}
+#header h1{
+    font-size: 300%;
+    color: #ff0000;
+    text-shadow: 1px 1px black;
+    text-align: center;
+}
+.pole{
+    width: 70%;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 36px;
+    color: #74d680;
+    text-shadow: 2px 2px black;
+    border-radius: 5%;
+}
+
+/* Okienka */
+
+#a{
+    background-image: url(img/okienko1.png);
+}
+#b{
+    background-image: url(img/okienko2.png);
+}
+#c{
+    background-image: url(img/okienko3.png);
+}
+#d{
+    background-image: url(img/okienko4.png);
+}
+#e{
+    background-image: url(img/okienko5.png);
+}
+#f{
+    background-image: url(img/okienko6.png);
+}
+#g{
+    background-image: url(img/okienko7.png);
+}
+#h{
+    background-image: url(img/okienko8.png);
+}
+#i{
+    background-image: url(img/okienko9.png);
+}
+#j{
+    background-image: url(img/okienko10.png);
+}
+#k{
+    background-image: url(img/okienko11.png);
+}
+#l{
+    background-image: url(img/okienko12.png);
+}
+#m{
+    background-image: url(img/okienko13.png);
+}
+#n{
+    background-image: url(img/okienko14.png);
+}
+#o{
+    background-image: url(img/okienko15.png);
+}
+#p{
+    background-image: url(img/okienko16.png);
+}
+#r{
+    background-image: url(img/okienko17.png);
+}
+#s{
+    background-image: url(img/okienko18.png);
+}
+#t{
+    background-image: url(img/okienko19.png);
+}
+#u{
+    background-image: url(img/okienko20.png);
+}
+#v{
+    background-image: url(img/okienko21.png);
+}
+#w{
+    background-image: url(img/okienko22.png);
+}
+#x{
+    background-image: url(img/okienko23.png);
+}
+#y{
+    background-image: url(img/okienko24.png);
+}
+
+
+
+#opening{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/openingbg.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#opening img{
+    width: 10%;
+    height: 10%;
+}
+
+.open{
+    animation: open 1s;
+}
+
+#powrot{
+    height: 50px;
+    width: 150px;
+    background-image: url(img/labelbg.png);
+    color: white;
+    font-size: 200%;
+}
+
+@keyframes open {
+    from{
+        transform: translateY(-200%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+#powrot:hover{
+    transform: scale(105%);
+}
+
+.pole:hover{
+    transform: scale(105%);
+}
+
+@media only screen and (max-width: 1170px) {
+    #header h1{
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #calendar{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #header h1{
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #opening{
+        width: 200vw;
+        height: 200vh;
+    }
+}
+@media only screen and (max-width: 300px) {
+    #opening{
+        width: 300vw;
+        height: 300vh;
+    }
+}
+@media only screen and (max-width: 200px) {
+    #opening{
+        width: 400vw;
+        height: 400vh;
+    }
+}
