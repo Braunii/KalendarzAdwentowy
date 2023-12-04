@@ -20,7 +20,7 @@ function opendiv(index, letter){
         localStorage.setItem("embedDisplay" + letter, "block");
     } else {
         opening.style.display = "none";
-        alert("Już zjadłeś tą czakoladkę człowieku!");
+        alert("Już zjadłeś tą czekoladkę człowieku!");
     }
 
     let image = document.querySelector('#image');
