@@ -8,36 +8,39 @@
 </head>
 <body>
     <div id="container">
-        <div id="header">
-            <h1>Kalendarz Adwentowy</h1>
-        </div>
+            <div id="header">
+                <h1>Kalendarz Adwentowy</h1>
+            </div>
         <div id="calendar">
-            <button class="pole" onclick="opendiv(1)" id="a">1</button>
-            <button class="pole" onclick="opendiv(4)" id="b">2</button>
-            <button class="pole" onclick="opendiv(2)" id="c">3</button>
-            <button class="pole" onclick="opendiv(6)" id="d">4</button>
-            <button class="pole" onclick="opendiv(7)" id="e">5</button>
-            <button class="pole" onclick="opendiv(6)" id="f">6</button>
-            <button class="pole" onclick="opendiv(3)" id="g">7</button>
-            <button class="pole" onclick="opendiv(5)" id="h">8</button>
-            <button class="pole" onclick="opendiv(0)" id="i">9</button>
-            <button class="pole" onclick="opendiv(6)" id="j">10</button>
-            <button class="pole" onclick="opendiv(3)" id="k">11</button>
-            <button class="pole" onclick="opendiv(2)" id="l">12</button>
-            <button class="pole" onclick="opendiv(5)" id="m">13</button>
-            <button class="pole" onclick="opendiv(4)" id="n">14</button>
-            <button class="pole" onclick="opendiv(0)" id="o">15</button>
-            <button class="pole" onclick="opendiv(3)" id="p">16</button>
-            <button class="pole" onclick="opendiv(4)" id="r">17</button>
-            <button class="pole" onclick="opendiv(6)" id="s">18</button>
-            <button class="pole" onclick="opendiv(4)" id="t">19</button>
-            <button class="pole" onclick="opendiv(1)" id="u">20</button>
-            <button class="pole" onclick="opendiv(4)" id="v">21</button>
-            <button class="pole" onclick="opendiv(1)" id="w">22</button>
-            <button class="pole" onclick="opendiv(2)" id="x">23</button>
-            <button class="pole" onclick="opendiv(3)" id="y">24</button>
-        </div> div
-    </div>div
+            <button class="pole" id="a" onclick="opendiv(1, 'a')">1 <img src="img/checkmark.png" id="imga"></button>
+            <button class="pole" id="b" onclick="opendiv(4, 'b')">2 <img src="img/checkmark.png" id="imgb"></button>
+            <button class="pole" id="c" onclick="opendiv(2, 'c')">3 <img src="img/checkmark.png" id="imgc"></button>
+            <button class="pole" id="d" onclick="opendiv(6, 'd')">4 <img src="img/checkmark.png" id="imgd"></button>
+            <button class="pole" id="e" onclick="opendiv(7, 'e')">5 <img src="img/checkmark.png" id="imge"></button>
+            <button class="pole" id="f" onclick="opendiv(6, 'f')">6 <img src="img/checkmark.png" id="imgf"></button>
+            <button class="pole" id="g" onclick="opendiv(3, 'g')">7 <img src="img/checkmark.png" id="imgg"></button>
+            <button class="pole" id="h" onclick="opendiv(5, 'h')">8 <img src="img/checkmark.png" id="imgh"></button>
+            <button class="pole" id="i" onclick="opendiv(0, 'i')">9 <img src="img/checkmark.png" id="imgi"></button>
+            <button class="pole" id="j" onclick="opendiv(6, 'j')">10 <img src="img/checkmark.png" id="imgj"></button>
+            <button class="pole" id="k" onclick="opendiv(3, 'k')">11 <img src="img/checkmark.png" id="imgk"></button>
+            <button class="pole" id="l" onclick="opendiv(2, 'l')">12 <img src="img/checkmark.png" id="imgl"></button>
+            <button class="pole" id="m" onclick="opendiv(5, 'm')">13 <img src="img/checkmark.png" id="imgm"></button>
+            <button class="pole" id="n" onclick="opendiv(4, 'n')">14 <img src="img/checkmark.png" id="imgn"></button>
+            <button class="pole" id="o" onclick="opendiv(0, 'o')">15 <img src="img/checkmark.png" id="imgo"></button>
+            <button class="pole" id="p" onclick="opendiv(3, 'p')">16 <img src="img/checkmark.png" id="imgp"></button>
+            <button class="pole" id="r" onclick="opendiv(4, 'r')">17 <img src="img/checkmark.png" id="imgr"></button>
+            <button class="pole" id="s" onclick="opendiv(6, 's')">18 <img src="img/checkmark.png" id="imgs"></button>
+            <button class="pole" id="t" onclick="opendiv(4, 't')">19 <img src="img/checkmark.png" id="imgt"></button>
+            <button class="pole" id="u" onclick="opendiv(1, 'u')">20 <img src="img/checkmark.png" id="imgu"></button>
+            <button class="pole" id="v" onclick="opendiv(4, 'v')">21 <img src="img/checkmark.png" id="imgv"></button>
+            <button class="pole" id="w" onclick="opendiv(1, 'w')">22 <img src="img/checkmark.png" id="imgw"></button>
+            <button class="pole" id="x" onclick="opendiv(2, 'x')">23 <img src="img/checkmark.png" id="imgx"></button>
+            <button class="pole" id="y" onclick="opendiv(3, 'y')">24 <img src="img/checkmark.png" id="imgy"></button>
+        </div>
+        <div id="reset">
+            <button id="resetbtn" onclick="resetbtn()">RESET</button>
+        </div>
+    </div>
     <div id="opening">
         <img src="img/nagroda1.png" id="image" alt="nagroda">
         <button id="powrot" onclick="powrot()">Powrót</button>
