@@ -208,33 +208,49 @@ body{
     transform: scale(105%);
 }
 
+@media only screen and (max-width: 1500px) {
+    #calendar{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
 @media only screen and (max-width: 1170px) {
     #header h1{
         font-size: 200%;
     }
+    #resetbtn{
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
+    #resetbtn{
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    #opening{
+        width: 200vw;
+        height: 200vh;
+    }
     #calendar{
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
+}
 
-    .pole{
-        font-size: 4vw;
-    }
-
-    .pole img{
-        width: 80%;
-        height: auto;
-    }
-
-    #header h1{
-        font-size: 5vw;
-    }
-
+@media only screen and (max-width: 575px) {
     #resetbtn{
-        font-size: 3vw; 
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #opening img{
+        width: 80px;
     }
 }
 
@@ -243,17 +259,24 @@ body{
         font-size: 100%;
     }
 }
-
-@media only screen and (max-width: 600px) {
-    #opening{
-        width: 200vw;
-        height: 200vh;
-    }
-}
 @media only screen and (max-width: 300px) {
     #opening{
         width: 300vw;
         height: 300vh;
+    }
+    #calendar{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .pole{
+        font-size: 20px;
+    }
+    #resetbtn{
+        width: 65px;
+    }
+    #opening img{
+        width: 80px;
+        height: 80px;
     }
 }
 @media only screen and (max-width: 200px) {
@@ -261,10 +284,15 @@ body{
         width: 400vw;
         height: 400vh;
     }
-}
-
-@media only screen and (max-width: 1170px) {
     #resetbtn{
-        font-size: 20px;
+        width: 40px;
+        height: 30px;
+        font-size: 7px;
+    }
+}
+@media only screen and (max-width: 150px){
+    #calendar{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }
