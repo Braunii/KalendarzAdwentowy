@@ -217,7 +217,24 @@ body{
 @media only screen and (max-width: 800px) {
     #calendar{
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .pole{
+        font-size: 4vw;
+    }
+
+    .pole img{
+        width: 80%;
+        height: auto;
+    }
+
+    #header h1{
+        font-size: 5vw;
+    }
+
+    #resetbtn{
+        font-size: 3vw; 
     }
 }
 
@@ -249,10 +266,5 @@ body{
 @media only screen and (max-width: 1170px) {
     #resetbtn{
         font-size: 20px;
-    }
-}
-@media only screen and (max-width: 800px) {
-    #resetbtn{
-        font-size: 15px;
     }
 }
